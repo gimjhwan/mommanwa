@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard", sans-serif;
+  box-sizing: border-box;
+}
+
+/* prettier-ignore */
+tr, th, td {
+  text-align: center;
+  vertical-align: middle;
+  /* border : 1px solid rgb(204, 204, 204); */
+}
+
+#main_header {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 1128px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#main_header > #nav_bar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* 상단 우측 내비게이션 바 */
+
+#nav_bar > ul {
+  overflow: hidden;
+}
+
+#nav_bar > ul > li {
+  float: left;
+}
+
+#nav_bar > ul > li > a {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
+/* 중앙 객실 사진 5장 */
+
+#roomPic {
+  display: flex;
+  width: 1128px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  overflow: hidden;
+  object-fit: fill;
+}
+
+#roomPic > #mainPic {
+  width: 552px;
+  height: 396px;
+  /* padding: 20px 30px;
+  padding-right: 0px; */
+  margin: 0 auto;
+  float: left;
+  /* border: 1px solid red; */
+}
+
+#roomPic > #subPic {
+  width: 576px;
+  height: 396px;
+  /* padding-top: 20px; */
+  margin: 0 auto;
+  overflow: hidden;
+  float: right;
+  /* border: 1px solid red; */
+}
+
+div > article {
+  float: left;
+  height: 192px;
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+
+#roomPic > #mainPic > img {
+  border-radius: 12px;
+  width: 552px;
+  height: 396px;
+}
+
+#roomPic > #subPic > article > img {
+  border-radius: 12px;
+  width: 264px;
+  height: 192px;
+}
+
+/* 객실 사진 아래 텍스트 */
+.content {
+  width: 1128px;
+  margin: 0 auto;
+}
+
+.content > .basicInformation > h2 {
+  padding-top: 45px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.content > .basicInformation > h1 {
+  padding-top: 12px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.content > .basicInformation > .review {
+  width: 110px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content > .basicInformation > .review > img {
+  width: 24px;
+  height: 24px;
+}
+
+.content > .basicInformation > .review > p {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.content > .basicInformation > .review > p > span {
+  padding-top: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #747474;
+}
+
+.content > h3 {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+/* 사장님의 추천 한마디 */
+
+.recommend {
+  width: 1128px;
+  height: 100px;
+  display: flex;
+  margin: 0 auto;
+  color: #747474;
+  background-color: #fafafa;
+  font-size: 20px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.recommend > p > span {
+  font-size: 40px;
+}
+
+/* 중앙 정보 바 */
+
+#information_bar {
+  /* border: 1px solid #ccc; */
+  padding-top: 25px;
+  font-size: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+#information_bar li {
+  display: inline;
+  float: center;
+}
+
+#information_bar a {
+  display: inline-block;
+  width: 376px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#information_bar > li > a {
+  /* padding: 2px 10px; */
+  color: #747474;
+  font-weight: 500;
+  font-size: 20px;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+#information_bar > li:first-child > a {
+  background-color: black;
+  font-weight: 700;
+  color: white;
+  border-radius: 12px 0px 0px 12px;
+}
+
+#information_bar > li:last-child > a {
+  border-radius: 0px 12px 12px 0px;
+}
+
+/* 중앙 정보 바 하단 내용 */
+
+.contentBox {
+  display: flex;
+  width: 1128px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contentBox > .left_side > .service {
+  width: 520px;
+  height: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.contentBox > .left_side > .service > p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contentBox > .left_side > .service > img {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contentBox > .left_side > .bus {
+  width: 520px;
+  height: 286px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.contentBox > .left_side > .bus > p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contentBox > .left_side > .bus > img {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contentBox > .left_side > .bus > a {
+  margin-left: auto;
+  font-size: 12px;
+  color: #0085ff;
+  text-decoration: none;
+}
+
+.contentBox > .right_box {
+  width: 608px;
+  /* border: 1px solid red; */
+}
+
+.contentBox > .right_box > .map {
+  padding-left: 52px;
+}
+
+/* 이용 예정 시설 */
+
+.pension {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 1128px;
+  height: 322px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  /* border: 1px solid red; */
+}
+
+.pension > .pension_box {
+  display: flex;
+  background-color: rgb(0, 133, 255, 0.05);
+  width: 1128px;
+  height: 288px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.pension > .pension_box > img {
+  padding-left: 24px;
+  width: 336px;
+  height: 240px;
+}
+
+/* 이용 예정 시설 - 우측 요소 */
+
+.pension > .pension_box > .pension_text {
+  padding-left: 24px;
+}
+
+.pension > .pension_box > .pension_text > h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pension > .pension_box > .pension_text > a {
+  width: 86px;
+  height: 24px;
+  padding-left: 480px;
+}
+
+/* 이용 예정 시설 - 우측 요소 - 상단 박스 */
+
+.pension > .pension_box > .pension_text > .top_box {
+  display: flex;
+  background-color: #fff;
+  width: 646px;
+  height: 94px;
+  border-radius: 20px;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.pension > .pension_box > .pension_text > .top_box > img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+.pension > .pension_box > .pension_text > .top_box > p {
+  padding-left: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #747474;
+}
+
+.pension > .pension_box > .pension_text > .top_box > .notice {
+  padding-top: 45px;
+  padding-left: 45px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #0085ff;
+}
+
+.pension > .pension_box > .pension_text > .top_box > .pension_price {
+  padding-left: 50px;
+}
+
+.pension > .pension_box > .pension_text > .top_box > .pension_price tr th {
+  padding: 10px 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pension > .pension_box > .pension_text > .top_box > .pension_price tr td {
+  padding: 10px 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* prettier-ignore */
+.pension > .pension_box > .pension_text > .top_box > .pension_price tr > .last_price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.space10x {
+  height: 10px;
+}
+
+.space20x {
+  height: 20px;
+}
+
+.space24x {
+  height: 24px;
+}
+
+.space32x {
+  height: 32px;
+}
+
+.space54x {
+  height: 54px;
+}
+
+/* 이용 예정 시설 - 우측 요소 - 하단 박스 */
+
+.pension > .pension_box > .pension_text > .bot_box {
+  display: flex;
+  background-color: #fff;
+  width: 646px;
+  height: 54px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.pension > .pension_box > .pension_text > .bot_box > p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #747474;
+  padding-left: 24px;
+}
+
+.pension > .pension_box > .pension_text > .bot_box > p > span {
+  font-size: 12px;
+  font-weight: 700;
+  padding-right: 40px;
+  color: #747474;
+}
+
+/* 총 금액표 */
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 1128px;
+  height: 184px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  /* border: 1px solid red; */
+}
+
+.price > .total_price {
+  display: flex;
+  background-color: rgb(0, 133, 255, 0.05);
+  width: 984px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.price > .total_price > .price_table tr th {
+  padding: 20px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price > .total_price > .price_table tr td > span {
+  text-decoration: line-through;
+  color: #747474;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.price > .total_price > .price_table tr td {
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* prettier-ignore */
+.price > .total_price > .price_table tr > .final_price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 최하단 버튼 */
+
+.button {
+  width: 1128px;
+  height: 83px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.chatting {
+  display: flex;
+  color: #0085ff;
+  width: 168px;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #0085ff;
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.booking {
+  display: flex;
+  background-color: #0085ff;
+  color: #fff;
+  width: 168px;
+  height: 42px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.space24x {
+  width: 24px;
+}

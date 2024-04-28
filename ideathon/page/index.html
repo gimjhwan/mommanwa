@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>몸만와(momanwa)</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 로고, 내비게이션 바 -->
+    <header id="main_header" style="padding-top: 10px">
+      <nav id="main_logo">
+        <a href="#"><img src="../images/logo.svg" alt="" /></a>
+      </nav>
+      <nav id="nav_bar">
+        <ul style="list-style: none">
+          <li><a href="#">숙소 등록</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">채팅</a></li>
+          <li><a href="#">멋쟁이사자</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 펜션 사진 -->
+    <div id="roomPic">
+      <div id="mainPic">
+        <img src="../images/pension1.png" />
+      </div>
+
+      <div id="subPic">
+        <article>
+          <img src="../images/pension2.png" />
+        </article>
+        <article>
+          <img src="../images/pension.png" />
+        </article>
+        <article>
+          <img src="../images/pension4.png" />
+        </article>
+        <article>
+          <img src="../images/pension5.png" />
+        </article>
+      </div>
+    </div>
+
+    <!-- 펜션 정보, 사장님 한마디 -->
+    <!-- prettier-ignore -->
+    <div class="content">
+      <div class="basicInformation">
+        <h2>펜션·풀빌라</h2>
+        <h1>대부도 나비 풀빌라</h1>
+        <div class="space20x"></div>
+        <div class="review">
+          <img src="../images/star.svg" alt=""><p> 4.8 <span>450명 평가</span></p>
+        </div>
+      </div>
+      <h3>제안한 사장님의 한마디</h3>
+      <div class="recommend">
+        <p style="padding-left: 30px">
+          요구한 사항들 다 봤는데 우리 숙소랑 너무 잘 맞는 것 같아요~<br />15명이면
+          수영장 이용하기에도 좋고, 해가 질 때 쯤 해안가 노을도 예뻐서 다들 사진
+          찍기에도 좋아요.
+        </p>
+      </div>
+    </div>
+
+    <!-- 중앙 바 -->
+    <!-- prettier-ignore -->
+    <ul id="information_bar">
+       <li><a href="#">서비스 정보</a></li><li><a href="#">시설 정보</a></li><li><a href="#">리뷰</a></li>
+     </ul>
+    <div class="space54x"></div>
+    <!-- 서비스 및 편의시설, 이용 예정 차량, 지도 -->
+    <div class="contentBox">
+      <div class="left_side">
+        <div class="service">
+          <p>서비스 및 편의시설</p>
+          <img src="../images/service.svg" alt="" />
+        </div>
+        <div class="space54x"></div>
+        <div class="bus">
+          <p>이용 예정 차량</p>
+          <img src="../images/bus.png" alt="" />
+          <a href="#">차량 변경</a>
+        </div>
+      </div>
+      <div class="right_box">
+        <div class="map">
+          <img src="../images/map.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="space24x"></div>
+
+    <!-- 이용 예정 시설 -->
+    <div class="pension">
+      <p>이용 예정 시설</p>
+      <div class="pension_box">
+        <img src="../images/pension.svg" alt="" />
+        <div class="pension_text">
+          <h2>나비2 독채풀빌라</h2>
+          <!-- <div class="space8x"></div> -->
+          <a href="#"><img src="../images/detailButton.svg" alt="" /></a>
+          <div class="space24x"></div>
+          <div class="top_box">
+            <img src="../images/clock.svg" alt="" />
+            <p>입실 15:00<br />퇴실 11:00</p>
+            <table class="pension_price">
+              <tr>
+                <th>기초 금액</th>
+                <th></th>
+                <th>추가 인원</th>
+                <th></th>
+                <th>총합 숙박비</th>
+              </tr>
+              <tr>
+                <td>868,000</td>
+                <td>+</td>
+                <td>90,000</td>
+                <td>=</td>
+                <td class="last_price">958,000원</td>
+              </tr>
+            </table>
+            <p class="notice">※ 다른 숙소 및 기존 가격</p>
+          </div>
+          <div class="space10x"></div>
+          <div class="bot_box">
+            <p><span>객실정보</span> 기준 30인 · 추가 1인당 3만 원</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space32x"></div>
+
+    <!-- 총 금액표 -->
+    <div class="price">
+      <p>총 금액표</p>
+      <div class="total_price">
+        <table class="price_table">
+          <tr>
+            <th>숙소 비용(사장님 할인)</th>
+            <th></th>
+            <th>버스 비용</th>
+            <th></th>
+            <th>서비스 할인</th>
+            <th></th>
+            <th>총 비용</th>
+          </tr>
+          <tr>
+            <td><span>958,000</span>900,000</td>
+            <td>+</td>
+            <td>380,000</td>
+            <td>-</td>
+            <td>150,000</td>
+            <td>=</td>
+            <td class="final_price">1,113,000원</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- 최하단 버튼 -->
+    <div class="button">
+      <a href="#" class="chatting"><p>사장님과 대화하기</p></a>
+      <div class="space24x"></div>
+      <a href="#" class="booking"><p>예약하기</p></a>
+    </div>
+    <br />
+  </body>
+</html>

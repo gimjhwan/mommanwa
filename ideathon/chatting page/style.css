@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard", sans-serif;
+  box-sizing: border-box;
+  text-decoration-line: none;
+}
+
+main {
+  display: flex;
+}
+
+.space12 {
+  width: 12px;
+  height: 12px;
+}
+
+/* prettier-ignore */
+tr, th, td {
+  text-align: center;
+  vertical-align: middle;
+  /* border : 1px solid rgb(204, 204, 204); */
+}
+
+#main_header {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 1128px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#main_header > #nav_bar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* 상단 우측 내비게이션 바 */
+
+#nav_bar > ul {
+  overflow: hidden;
+}
+
+#nav_bar > ul > li {
+  float: left;
+}
+
+#nav_bar > ul > li > a {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
+/* 좌측 박스 */
+
+.chat_list {
+  width: 324px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.chat_list > h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0085ff;
+  padding: 24px;
+}
+
+/* 좌측 박스 - 첫 번째 채팅방 */
+
+.chat_list > .smallProfile_1 {
+  width: 300px;
+  height: 68px;
+  border-radius: 6px;
+  background-color: #eeeeee;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.chat_list > .smallProfile_1 > img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+.chat_list > .smallProfile_1 > .pension {
+  width: 232px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.chat_list > .smallProfile_1 > .pension > h2 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #0085ff;
+}
+
+.chat_list > .smallProfile_1 > .pension > p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #747474;
+}
+
+/* 좌측 박스 - 두 번째 채팅방 */
+
+.chat_list > .smallProfile_2 {
+  width: 300px;
+  height: 68px;
+  border-radius: 6px;
+  background-color: #fff;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.chat_list > .smallProfile_2 > img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 8px;
+}
+
+.chat_list > .smallProfile_2 > .momanwa {
+  width: 232px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.chat_list > .smallProfile_2 > .momanwa > h2 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #0085ff;
+}
+
+.chat_list > .smallProfile_2 > .momanwa > p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #747474;
+}
+
+/* 중앙 박스 */
+
+.chat {
+  width: 792px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* 중앙 박스 - 상단바 */
+
+.chat > .top_bar {
+  width: 792px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+}
+
+.chat > .top_bar > img {
+  width: 48px;
+  height: 48px;
+  margin-left: 24px;
+  margin-right: 12px;
+}
+
+.chat > .top_bar > .name {
+  width: 149px;
+  height: 52px;
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.chat > .top_bar > .name > h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.chat > .top_bar > .name > p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #58677a;
+}
+
+.chat > .top_bar > .dots {
+  float: right;
+  padding-left: 503px;
+}
+
+.chat > .top_bar > .dots > img {
+  width: 32px;
+  height: 32px;
+}
+
+/* 중앙 박스 - 날짜변경선 */
+
+.chat > .timeline {
+  width: 744px;
+  height: 20px;
+}
+
+.chat > .timeline > p {
+  color: #d9d9d9;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.chat > .timeline > p {
+  color: #d9d9d9;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* 중앙 박스 - 가운데 내용 */
+
+.chat > .chatting {
+  width: 792px;
+  height: 494px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat > .chatting > p {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 중앙 박스 - 하단 입력창 및 아이콘 */
+
+.chat > .bar {
+  width: 792px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.chat > .bar > .typeBox {
+  width: 576px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.chat > .bar > .typeBox > p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #999999;
+  padding-left: 24px;
+}
+
+.chat > .bar > .iconBox {
+  width: 192px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.chat > .bar > .iconBox > a {
+  text-decoration: none;
+}
+
+.chat > .bar > .iconBox > img {
+  width: 32px;
+  height: 32px;
+}
+
+/* 우측 박스 */
+
+/* 우측 박스 - 사진, 업체명 */
+
+.profile {
+  width: 324px;
+  height: 470px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile > .pension_name {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 104px;
+  height: 148px;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.profile > .pension_name > img {
+  width: 104px;
+  height: 104px;
+}
+
+.profile > .pension_name > h2 {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.profile > .pension_name > h3 {
+  font-weight: 500;
+  font-size: 12px;
+  color: #747474;
+}
+
+/* 우측 박스 - 아이콘 2개 */
+.profile > .iconSet {
+  width: 134px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.profile > .iconSet > .icon {
+  width: 52px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.profile > .iconSet > .icon > img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+
+.profile > .iconSet > .icon > p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* 우측 상자 - 별점, 주소, 편의시설 */
+
+.profile > .detail {
+  width: 276px;
+  height: 82px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.profile > .detail > h3 {
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.profile > .detail > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+  margin-bottom: 8px;
+}
+
+.profile > .detail > span {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.profile > .detail > p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #747474;
+  margin-bottom: 8px;
+  margin-right: 20px;
+}
+
+.profile > .detail > .tag {
+  font-weight: 500;
+  font-size: 12px;
+  color: #0085ff;
+  background-color: rgb(0, 133, 255, 0.05);
+  padding: 4px 8px;
+  margin-right: 12px;
+}
+
+/* 우측 상자 - 나가기 및 신고하기 */
+
+.profile > .buttonSet {
+  display: flex;
+  width: 276px;
+  height: 60px;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+
+.profile > .buttonSet > .leftButton {
+  width: 132px;
+  height: 60px;
+  border-radius: 8px;
+  border: #0085ff solid 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile > .buttonSet > .leftButton > img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.profile > .buttonSet > .leftButton > p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #0085ff;
+  text-decoration: none;
+}
+
+.profile > .buttonSet > .rightButton {
+  width: 132px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #f00;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.profile > .buttonSet > .rightButton > img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.profile > .buttonSet > .rightButton > p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
